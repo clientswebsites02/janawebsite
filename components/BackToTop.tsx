@@ -21,11 +21,11 @@ export default function BackToTop() {
   }, []);
 
   const scrollToTop = () => {
-    // Ensure exactly 2 seconds duration
-    const duration = 2000;
+    const duration = 1500;
     const start = window.scrollY;
     const startTime = performance.now();
 
+    // Start scrolling immediately
     const animateScroll = (currentTime: number) => {
       const elapsed = currentTime - startTime;
       const progress = Math.min(elapsed / duration, 1);
@@ -42,6 +42,7 @@ export default function BackToTop() {
       }
     };
 
+    // Start immediately without delay
     requestAnimationFrame(animateScroll);
   };
 

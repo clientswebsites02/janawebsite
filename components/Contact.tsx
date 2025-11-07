@@ -159,8 +159,9 @@ export default function Contact() {
               </div>
 
               {/* Additional Info */}
-              <Card className="border-2 border-purple-100 bg-gradient-to-br from-purple-50 to-blue-50">
-                <CardContent className="p-6">
+              <motion.div whileHover={{ scale: 1.02 }}>
+                <Card className="border-2 border-purple-100 shadow-lg hover:shadow-xl transition-all bg-gradient-to-br from-purple-50 to-blue-50">
+                  <CardContent className="p-6">
                   <h4 className="font-semibold text-lg mb-3 text-gray-800">
                     Available For
                   </h4>
@@ -184,11 +185,15 @@ export default function Contact() {
                   </ul>
                 </CardContent>
               </Card>
+              </motion.div>
             </motion.div>
 
             {/* Contact Form */}
-            <motion.div variants={itemVariants}>
-              <Card className="border-2 border-purple-100 shadow-xl">
+            <motion.div 
+              variants={itemVariants}
+              whileHover={{ scale: 1.02 }}
+            >
+              <Card className="border-2 border-purple-100 shadow-xl hover:shadow-2xl transition-all">
                 <CardContent className="p-6 md:p-8">
                   <h3 className="text-xl md:text-2xl font-semibold mb-6 text-gray-800">
                     Send Me a Message

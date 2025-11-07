@@ -67,8 +67,11 @@ export default function Experience() {
           </motion.div>
 
           {/* Experience Card */}
-          <motion.div variants={itemVariants}>
-            <Card className="border-2 border-purple-100 shadow-xl hover:shadow-2xl transition-shadow">
+          <motion.div 
+            variants={itemVariants}
+            whileHover={{ scale: 1.02 }}
+          >
+            <Card className="border-2 border-purple-100 shadow-xl hover:shadow-2xl transition-all">
               <CardHeader className="bg-gradient-to-r from-purple-50 to-blue-50 p-4 sm:p-6">
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
                   <div className="flex items-start space-x-3 md:space-x-4">
@@ -137,8 +140,12 @@ export default function Experience() {
           </motion.div>
 
           {/* Education */}
-          <motion.div variants={itemVariants} className="mt-12">
-            <Card className="border-2 border-blue-100 shadow-xl hover:shadow-2xl transition-shadow">
+          <motion.div 
+            variants={itemVariants} 
+            className="mt-12"
+            whileHover={{ scale: 1.02 }}
+          >
+            <Card className="border-2 border-blue-100 shadow-xl hover:shadow-2xl transition-all">
               <CardHeader className="bg-gradient-to-r from-blue-50 to-purple-50">
                 <div className="flex items-start space-x-4">
                   <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl flex items-center justify-center flex-shrink-0">

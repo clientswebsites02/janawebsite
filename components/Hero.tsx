@@ -91,10 +91,25 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.6 }}
+            className="flex justify-center mb-4 md:mb-6"
           >
-            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-gray-800 mb-4 md:mb-6 px-2 sm:px-4">
-              Junior Software Engineer
-            </h2>
+            <div className="inline-flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-purple-100 via-blue-100 to-purple-100 border-2 border-purple-200 rounded-full shadow-md">
+              <motion.div
+                animate={{ 
+                  scale: [1, 1.2, 1],
+                  opacity: [0.5, 1, 0.5]
+                }}
+                transition={{ 
+                  duration: 2,
+                  repeat: Infinity,
+                  ease: "easeInOut"
+                }}
+                className="w-2 h-2 rounded-full bg-gradient-to-r from-purple-500 to-blue-500"
+              />
+              <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold bg-gradient-to-r from-purple-700 via-blue-600 to-purple-700 bg-clip-text text-transparent">
+                Junior Software Engineer
+              </h2>
+            </div>
           </motion.div>
 
           {/* Tagline */}

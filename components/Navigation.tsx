@@ -53,17 +53,18 @@ export default function Navigation() {
                 window.scrollTo({ top: 0, behavior: "smooth" });
               }}
               className="cursor-pointer"
-              whileHover={{ scale: 1.1, rotate: 5 }}
-              whileTap={{ scale: 0.9 }}
+              whileHover={{ scale: 1.05, rotate: 3 }}
+              whileTap={{ scale: 0.95 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
-              <div className="relative w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 flex-shrink-0">
+              <div className="relative w-32 h-12 sm:w-40 sm:h-14 md:w-48 md:h-16 flex-shrink-0">
                 <Image
                   src={isScrolled ? "/janalogo2.svg" : "/janalogo.svg"}
                   alt="Jana Hamed Al-madadha"
                   fill
                   className="object-contain drop-shadow-lg transition-all duration-300"
                   priority
+                  sizes="(max-width: 640px) 128px, (max-width: 768px) 160px, 192px"
                 />
               </div>
             </motion.a>

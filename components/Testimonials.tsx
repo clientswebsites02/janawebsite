@@ -78,7 +78,7 @@ export default function Testimonials() {
               <motion.div
                 key={index}
                 variants={itemVariants}
-                whileHover={{ y: -10 }}
+                whileHover={{ y: -10, scale: 1.02 }}
                 className="h-full"
               >
                 <Card className="h-full border-2 border-purple-100 shadow-lg hover:shadow-2xl transition-all bg-white">

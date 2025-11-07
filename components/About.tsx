@@ -90,8 +90,12 @@ export default function About() {
           </motion.div>
 
           {/* Introduction Card */}
-          <motion.div variants={itemVariants} className="mb-8 md:mb-12">
-            <Card className="border-2 border-purple-100 shadow-xl bg-gradient-to-br from-white to-purple-50">
+          <motion.div 
+            variants={itemVariants} 
+            className="mb-8 md:mb-12"
+            whileHover={{ scale: 1.02 }}
+          >
+            <Card className="border-2 border-purple-100 shadow-xl hover:shadow-2xl transition-all bg-gradient-to-br from-white to-purple-50">
               <CardContent className="p-6 sm:p-8 md:p-10">
                 <div className="prose prose-lg max-w-none">
                   <p className="text-gray-700 leading-relaxed mb-4 text-sm sm:text-base md:text-lg">
@@ -120,7 +124,7 @@ export default function About() {
                 <motion.div
                   key={item.title}
                   variants={itemVariants}
-                  whileHover={{ y: -5 }}
+                  whileHover={{ y: -5, scale: 1.02 }}
                   className="group"
                 >
                   <Card className="h-full border-2 border-purple-100 shadow-lg hover:shadow-2xl transition-all bg-white">
@@ -163,8 +167,12 @@ export default function About() {
           </motion.div>
 
           {/* Professional Summary */}
-          <motion.div variants={itemVariants} className="mt-12">
-            <Card className="border-2 border-blue-100 shadow-xl bg-gradient-to-r from-blue-50 to-purple-50">
+          <motion.div 
+            variants={itemVariants} 
+            className="mt-12"
+            whileHover={{ scale: 1.02 }}
+          >
+            <Card className="border-2 border-blue-100 shadow-xl hover:shadow-2xl transition-all bg-gradient-to-r from-blue-50 to-purple-50">
               <CardContent className="p-6 md:p-8">
                 <h3 className="text-2xl font-bold mb-4 text-center text-gray-800">
                   Current Focus
