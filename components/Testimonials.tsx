@@ -100,7 +100,7 @@ export default function Testimonials() {
 
                     {/* Content */}
                     <p className="text-gray-700 leading-relaxed mb-6 flex-grow italic">
-                      "{testimonial.content}"
+                      &ldquo;{testimonial.content}&rdquo;
                     </p>
 
                     {/* Author */}
@@ -125,12 +125,15 @@ export default function Testimonials() {
               Want to Share Your Experience?
             </h3>
             <p className="text-lg mb-6 opacity-90">
-              If you've worked with me, I'd love to hear your feedback!
+              If you&apos;ve worked with me, I&apos;d love to hear your feedback!
             </p>
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => {
+                const contactSection = document.getElementById('contact');
+                contactSection?.scrollIntoView({ behavior: 'smooth' });
+              }}
               className="px-8 py-3 bg-white text-purple-600 font-semibold rounded-lg hover:bg-gray-100 transition-colors"
             >
               Get In Touch

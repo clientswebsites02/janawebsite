@@ -95,14 +95,14 @@ export default function About() {
               <CardContent className="p-6 sm:p-8 md:p-10">
                 <div className="prose prose-lg max-w-none">
                   <p className="text-gray-700 leading-relaxed mb-4 text-sm sm:text-base md:text-lg">
-                    👋 Hello! I'm <span className="font-semibold text-purple-700">Jana Hamed Al-madadha</span>, 
+                    👋 Hello! I&apos;m <span className="font-semibold text-purple-700">Jana Hamed Al-madadha</span>, 
                     a passionate Junior Software Engineer based in Amman, Jordan. With a fresh perspective from my 
-                    Bachelor's degree in Software Engineering from Mutah University, I bring enthusiasm, creativity, 
+                    Bachelor&apos;s degree in Software Engineering from Mutah University, I bring enthusiasm, creativity, 
                     and a strong foundation in modern programming practices.
                   </p>
                   <p className="text-gray-700 leading-relaxed text-sm sm:text-base md:text-lg">
                     💡 My journey in technology is driven by a desire to create meaningful solutions. I thrive in 
-                    collaborative environments where innovation meets teamwork, and I'm constantly seeking opportunities 
+                    collaborative environments where innovation meets teamwork, and I&apos;m constantly seeking opportunities 
                     to expand my technical expertise while making a positive impact through code.
                   </p>
                 </div>
@@ -170,10 +170,10 @@ export default function About() {
                   Current Focus
                 </h3>
                 <p className="text-gray-700 leading-relaxed text-center text-base md:text-lg">
-                  I'm currently expanding my expertise in software development while working as a 
+                  I&apos;m currently expanding my expertise in software development while working as a 
                   <span className="font-semibold text-purple-700"> Hospital Affairs Coordinator at NatHealth</span>, 
-                  where I've developed strong organizational, communication, and problem-solving skills managing 
-                  complex insurance documentation and medical approvals. I'm eager to transition these skills into 
+                  where I&apos;ve developed strong organizational, communication, and problem-solving skills managing 
+                  complex insurance documentation and medical approvals. I&apos;m eager to transition these skills into 
                   full-time software development roles where I can make a meaningful impact.
                 </p>
               </CardContent>
