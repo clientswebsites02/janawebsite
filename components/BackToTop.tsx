@@ -56,7 +56,11 @@ export default function BackToTop() {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 z-50 p-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-full shadow-lg hover:shadow-xl transition-shadow"
+          onTouchEnd={(e) => {
+            e.preventDefault();
+            scrollToTop();
+          }}
+          className="fixed bottom-8 right-8 z-50 p-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-full shadow-lg hover:shadow-xl transition-shadow touch-none"
           aria-label="Back to top"
         >
           <ArrowUp className="w-6 h-6" />
